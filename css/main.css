@@ -1,0 +1,21 @@
+body {
+	background-color: #fff;
+	color: #444;
+}
+
+pre {
+	border: none;
+	color: #217987;
+}
+
+pre.error {
+	color: #c30;
+}
+
+.footer {
+	border-top: 1px solid #eee;
+	padding-top: 10px;
+	margin-top: 32px;
+	font-size: 85%;
+	color: #888;
+}
