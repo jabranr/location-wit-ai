@@ -30,11 +30,16 @@
 			  method: 'GET',
 			  success: function(data) {
 			      if (data) {
-			      	output.html(JSON.stringify(data, null, 4)).wrap( $('<pre />') );
+			      	output.html(JSON.stringify(data, null, 4))
+			      		.wrap( $('<pre />') );
 			      }
 			  },
 			  error: function(xhr, error) {
-			  	output.html(JSON.stringify(data, null, 4)).wrap( $('<pre />', {'class': 'error'}) );
+			  	output
+			  		.html(JSON.stringify(data, null, 4))
+			  		.wrap( $('<pre />', {
+				  		'class': 'error'
+				  	}) );
 			  }
 			});
 		}
